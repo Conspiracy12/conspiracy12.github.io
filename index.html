@@ -137,6 +137,36 @@
                 </div>
             </div>
         </div>
+
+        <section id="my-set">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h2>My Setup</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lag-6 mb-3">
+                        <div class="set-box">
+                            <h4 class="mouse-name">Razer Deathadder</h4>
+                            <img src="img/set/ms.png" alt="Razer Deathadder" class="mouse-img">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lag-6 mb-3">
+                        <div class="set-box">
+                            <h4 class="headset-name">Logitech 431</h4>
+                            <img src="img/set/hs.png" alt="Logitech 431" class="headset-img">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lag-6 mb-3">
+                        <div class="set-box">
+                            <h4 class="keyboard-name">CM Quickfire Rapid</h4>
+                            <img src="img/set/kb.png" alt="CM Quick Fire" class="keyboard-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="10"
                 d="M0,192L0,96L102.9,96L102.9,288L205.7,288L205.7,64L308.6,64L308.6,160L411.4,160L411.4,0L514.3,0L514.3,0L617.1,0L617.1,288L720,288L720,128L822.9,128L822.9,64L925.7,64L925.7,96L1028.6,96L1028.6,192L1131.4,192L1131.4,256L1234.3,256L1234.3,96L1337.1,96L1337.1,96L1440,96L1440,320L1337.1,320L1337.1,320L1234.3,320L1234.3,320L1131.4,320L1131.4,320L1028.6,320L1028.6,320L925.7,320L925.7,320L822.9,320L822.9,320L720,320L720,320L617.1,320L617.1,320L514.3,320L514.3,320L411.4,320L411.4,320L308.6,320L308.6,320L205.7,320L205.7,320L102.9,320L102.9,320L0,320L0,320Z">
@@ -324,6 +354,20 @@
                 .catch(error => console.error('Error!', error.message));
         });
     </script>
+
+    <!-- 3D Tilt js -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".set-box"), {
+            max: 25,
+            speed: 1000,
+            glare: true,
+        });
+
+        //It also supports NodeList
+        // VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
 
 </body>
 

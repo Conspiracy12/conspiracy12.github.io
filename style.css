@@ -23,3 +23,138 @@ section {
 #gallery .row>* {
     padding: 0;
 }
+
+/* My Set Section */
+.set-box {
+    position: relative;
+    background-color: #ffc107;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.set-box::before {
+    content: 'MY';
+    position: absolute;
+    color: aliceblue;
+    font-size: 6em;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.set-box:hover::before {
+    opacity: 0.2;
+}
+
+.set-box::after {
+    content: 'SETUP';
+    position: absolute;
+    color: aliceblue;
+    font-size: 5em;
+    font-weight: bold;
+    font-style: italic;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.set-box:hover::after {
+    opacity: 0.2;
+}
+
+.mouse-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: azure;
+    text-align: center;
+    font-size: 1.5em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+
+.set-box:hover .mouse-name {
+    top: 15px;
+    opacity: 1;
+}
+
+.mouse-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 100px);
+    max-width: 400px;
+    transition: 0.5s;
+}
+
+.set-box:hover .mouse-img {
+    transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.headset-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: azure;
+    text-align: center;
+    font-size: 1.5em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+
+.set-box:hover .headset-name {
+    top: 15px;
+    opacity: 1;
+}
+
+.headset-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 100px);
+    max-width: 300px;
+    transition: 0.5s;
+}
+
+.set-box:hover .headset-img {
+    transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.keyboard-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: azure;
+    text-align: center;
+    font-size: 1.5em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+
+.set-box:hover .keyboard-name {
+    top: 15px;
+    opacity: 1;
+}
+
+.keyboard-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 100px);
+    max-width: 350px;
+    transition: 0.5s;
+}
+
+.set-box:hover .keyboard-img {
+    transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
